@@ -24,17 +24,55 @@
 
 ### Задание 1
 
-`Приведите ответ в свободной форме........`
+Задание 1
 
-1. `Заполните здесь этапы выполнения, если требуется ....`
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
+Что нужно сделать:
+
+    Разверните GitLab локально, используя Vagrantfile и инструкцию, описанные в этом репозитории.
+    Создайте новый проект и пустой репозиторий в нём.
+    Зарегистрируйте gitlab-runner для этого проекта и запустите его в режиме Docker. Раннер можно регистрировать и запускать на той же виртуальной машине, на которой запущен GitLab.
+
+В качестве ответа в репозиторий шаблона с решением добавьте скриншоты с настройками раннера в проекте.
 
 ```
-Поле для вставки кода...
+Решение 
+sudo gitlab-runner register
+Runtime platform                                    arch=amd64 os=linux pid=24844 revision=3153ccc6 version=17.7.0
+Running in system-mode.                            
+                                                   
+Enter the GitLab instance URL (for example, https://gitlab.com/):
+http://172.17.0.2
+Enter the registration token:
+GR1348941sHhaiUyWxEBQ3zUF9FaZ
+Enter a description for the runner:
+[dgelynin-VMware-Virtual-Platform]: 
+Enter tags for the runner (comma-separated):
+
+Enter optional maintenance note for the runner:
+
+WARNING: Support for registration tokens and runner parameters in the 'register' command has been deprecated in GitLab Runner 15.6 and will be replaced with support for authentication tokens. For more information, see https://docs.gitlab.com/ee/ci/runners/new_creation_workflow 
+Registering runner... succeeded                     runner=GR1348941sHhaiUyW
+Enter an executor: docker-autoscaler, instance, shell, parallels, docker+machine, docker, docker-windows, kubernetes, custom, ssh, virtualbox:
+docker
+Enter the default Docker image (for example, ruby:2.7):
+
+Enter the default Docker image (for example, ruby:2.7):
+golang:1.16
+Runner registered successfully. Feel free to start it, but if it's running already the config should be automatically reloaded!
+ 
+Configuration (with the authentication token) was saved in "/etc/gitlab-runner/config.toml" 
+dgelynin@dgelynin-VMware-Virtual-Platform:~$ sudo gitlab-runner run docker
+Runtime platform                                    arch=amd64 os=linux pid=25490 revision=3153ccc6 version=17.7.0
+Starting multi-runner from /etc/gitlab-runner/config.toml...  builds=0 max_builds=0
+Running in system-mode.                            
+                                                   
+Configuration loaded                                builds=0 max_builds=1
+listen_address not defined, metrics & debug endpoints disabled  builds=0 max_builds=1
+[session_server].listen_address not defined, session endpoints disabled  builds=0 max_builds=1
+Initializing executor providers                     builds=0 max_builds=1
+
+
+
 ....
 ....
 ....
