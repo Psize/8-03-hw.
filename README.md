@@ -79,9 +79,8 @@ Initializing executor providers                     builds=0 max_builds=1
 ....
 ```
 
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота 1](ссылка на скриншот 1)`
-![image](https://github.com/user-attachments/assets/ae8add32-ac08-4dba-94c7-070b272d1d12)
+![image](https://github.com/user-attachments/assets/b47c2f72-f57c-4a31-85d4-f3d7bd90d1a5)
+
 
 
 ---
@@ -128,6 +127,7 @@ deploy:
 ....
 ....
 ```
+![image](https://github.com/user-attachments/assets/05dd5746-0302-435e-a10f-04348745a2fa)
 
 
 ### Задание 3
