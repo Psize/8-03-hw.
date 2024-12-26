@@ -97,18 +97,37 @@ Initializing executor providers                     builds=0 max_builds=1
 6. 
 
 ```
-Поле для вставки кода...
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  script:
+    - echo "Building the project..."
+    - # Здесь вы можете добавить команды для сборки вашего проекта
+
+test:
+  stage: test
+  script:
+    - echo "Running tests..."
+    - # Здесь вы можете добавить команды для запуска тестов вашего проекта
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying the project..."
+    - # Здесь вы можете добавить команды для развертывания вашего проекта
+  only:
+    - main  # Замените на вашу основную ветку, если необходимо
+
 ....
 ....
 ....
 ....
 ```
 
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота 2](ссылка на скриншот 2)`
-
-
----
 
 ### Задание 3
 
