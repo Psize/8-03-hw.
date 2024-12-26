@@ -81,6 +81,7 @@ Initializing executor providers                     builds=0 max_builds=1
 
 `При необходимости прикрепитe сюда скриншоты
 ![Название скриншота 1](ссылка на скриншот 1)`
+![image](https://github.com/user-attachments/assets/ae8add32-ac08-4dba-94c7-070b272d1d12)
 
 
 ---
